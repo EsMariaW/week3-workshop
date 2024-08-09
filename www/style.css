@@ -5,15 +5,10 @@ form input{
     margin-bottom: 1em;
     padding: 0.5em;
 }
-.success{
-    background-color: greenyellow;
-}
-.fail{
-    background-color: red;
-}
 .hidemessage{
     display:none;
 } 
 .showmessage{
     display:block;
+    background-color: red;
 }

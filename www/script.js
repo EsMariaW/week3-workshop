@@ -19,17 +19,11 @@ $( document ).ready(function(){
             dataType : 'json',
             success : function(response){   // if AJAX response was successful
                 if (response.valid){
-                    $("#loginform").removeClass("fail");
-                    $("#loginform").addClass("success");
-                    $("#message").removeClass('showmessage');
-                    $("#message").addClass('hidemessage');
-                    $("#postResultDiv").html("<p>"+"Successful!"+"</p>");
+                    $("#errormsg").removeClass('showmessage');
+                    $("#errormsg").addClass('hidemessage');
                 }else{
-                    $("#loginform").removeClass("success");
-                    $("#loginform").addClass("fail");
-                    $("#message").removeClass('hidemessage');
-                    $("#message").addClass('showmessage');
-                    $("#postResultDiv").html("<p>"+"Unsuccessful."+"</p>");
+                    $("#errormsg").removeClass('hidemessage');
+                    $("#errormsg").addClass('showmessage');
                 }
             },
             error: function(xhr, status, error) {
