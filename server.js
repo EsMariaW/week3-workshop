@@ -7,8 +7,8 @@ app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 app.use(express.static(__dirname + '/www')); // allows serving files
 
-// create server on port 8888
-let server = http.listen(8888,function(){
+// create server on port 3000
+let server = http.listen(3000,function(){
     let host = server.address().address;
     let port = server.address().port;
     console.log("Server successfully running!");
